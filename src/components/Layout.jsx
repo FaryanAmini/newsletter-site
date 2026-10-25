@@ -1,4 +1,4 @@
-import { NavLink, Outlet } from 'react-router-dom'
+import { Link, NavLink, Outlet } from 'react-router-dom'
 import ThemeToggle from './ThemeToggle.jsx'
 import { site } from '../data.js'
 
@@ -16,7 +16,7 @@ export default function Layout() {
           </nav>
           <div className="nav-actions">
             <ThemeToggle />
-            <a className="btn btn-primary" href="#subscribe">Subscribe</a>
+            <Link className="btn btn-primary" to="/#subscribe">Subscribe</Link>
           </div>
         </div>
       </header>
@@ -40,7 +40,7 @@ export default function Layout() {
               <ul>
                 <li><a href="/">Home</a></li>
                 <li><a href="/archive">Archive</a></li>
-                <li><a href="#subscribe">Subscribe</a></li>
+                <li><Link to="/#subscribe">Subscribe</Link></li>
               </ul>
             </div>
             <div className="footer-col">
