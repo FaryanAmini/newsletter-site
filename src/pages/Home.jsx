@@ -9,7 +9,9 @@ export default function Home() {
   function subscribe(e) {
     e.preventDefault()
     if (!email.trim()) return
-    // TODO: wire this to your mailing-list provider (Mailchimp, Buttondown, etc.)
+    // TODO:(Mailchimp, Buttondown, etc.)
+    // thinking Beehive
+    //
     setDone(true)
   }
 
